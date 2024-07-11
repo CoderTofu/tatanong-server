@@ -19,7 +19,7 @@ const {
 assert(PORT, "PORT is required");
 assert(HOST, "HOST is required");
 
-export default {
+export const config = {
   port: PORT,
   host: HOST,
   url: HOST_URL,
