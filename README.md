@@ -1,6 +1,6 @@
 # Server for Tatanong Web App
 
-This server is meant to be used with the [Flashcards Web App](https://dev.to/ibukunfolay/build-a-nodejs-server-using-firebasefirestore-crud-2725) created using Angular. It provides the necessary backend functionality for the app.
+This [server](<(https://dev.to/ibukunfolay/build-a-nodejs-server-using-firebasefirestore-crud-2725)>) is meant to be used for the TATANONG web app created using Angular. It provides the necessary backend functionality for the app.
 
 ## Installation
 

@@ -3,6 +3,7 @@ import assert from "assert";
 
 dotenv.config();
 
+// basic configurations for the server
 const {
   PORT,
   HOST,
