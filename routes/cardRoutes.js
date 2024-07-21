@@ -13,8 +13,8 @@ const router = express.Router();
 
 router.get("/", getCardSets);
 router.post("/new", createCardSet);
-router.get("/cardset/:searchID", getBySearchID);
-router.get("/cardset/:editID", getByEditID);
+router.get("/cardset/search/:searchID", getBySearchID);
+router.get("/cardset/edit/:editID", getByEditID);
 router.put("/update/:editID", updateCardSet);
 router.delete("/delete/:editID", deleteCardSet);
 
