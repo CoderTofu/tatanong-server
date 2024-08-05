@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
     res.send("Hello, world!");
 });
 
-const PORT = 5000; // Specify the port number
+const PORT = 3333; // Specify the port number
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
