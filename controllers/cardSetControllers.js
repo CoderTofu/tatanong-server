@@ -17,7 +17,6 @@ const db = getFirestore(firebase);
 
 // Get all card sets
 export const getCardSets = async (req, res) => {
-  console.log("getCardSets");
   try {
     // create a query
     const cardSetsCollection = collection(db, "FlashCards");
