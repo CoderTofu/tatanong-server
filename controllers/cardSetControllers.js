@@ -49,9 +49,9 @@ export const createCardSet = async (req, res) => {
     );
 
     await addDoc(collection(db, "FlashCards"), cardSet.objectify());
-    res.status(200).send("Card Set added successfully");
+    res.status(200).json({ message: "Card Set added successfully" });
   } catch (error) {
-    res.status(400).send(error.message);
+    res.status(400).json(error.message);
   }
 };
 
@@ -121,12 +121,12 @@ export const updateCardSet = async (req, res) => {
       // Update the document
       await updateDoc(docRef, update);
 
-      res.status(200).send("Card Set updated successfully");
+      res.status(200).json({ message: "Card Set updated successfully" });
     } else {
-      res.status(404).send("No Card Set found with the given name");
+      res.status(404).json({ message: "No Card Set found with the given ID" });
     }
   } catch (error) {
-    res.status(400).send(error.message);
+    res.status(400).json(error.message);
   }
 };
 
@@ -151,7 +151,7 @@ export const deleteCardSet = async (req, res) => {
 
       res.status(200).send("Card Set deleted successfully");
     } else {
-      res.status(404).send("No Card Set found with the given ID");
+      res.status(404).send("No Card Set found with the given ID: " + editID);
     }
   } catch (error) {
     res.status(400).send(error.message);
